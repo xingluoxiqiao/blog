@@ -73,7 +73,7 @@ $.ajax({
   type: 'get',
   url: 'https://apis.map.qq.com/ws/location/v1/ip',
   data: {
-    key: '',  // 这里要写你的KEY!!!
+    key: 'XZFBZ-CCNCC-RON2K-AENE6-5MQJ2-XSFH7',  // 这里要写你的KEY!!!
     output: 'jsonp',
   },
   dataType: 'jsonp',
@@ -99,7 +99,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(113.34499552, 23.15537143, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(115.908639,28.570005, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
@@ -134,11 +134,13 @@ function showWelcome() {
       ip = ipLoacation.result.ip;
       switch (ipLoacation.result.ad_info.province) {
         case "北京市":
-          posdesc = "北——京——欢迎你~~~";
+          posdesc = "京爷您吉祥！";
           break;
         case "天津市":
           posdesc = "讲段相声吧。";
           break;
+        case "重庆市":
+          posdesc = "想你的风吹到了重庆。";
         case "河北省":
           posdesc = "山势巍巍成壁垒，天下雄关。铁马金戈由此向，无限江山。";
           break;
@@ -162,9 +164,6 @@ function showWelcome() {
           break;
         case "江苏省":
           switch (ipLoacation.result.ad_info.city) {
-            case "南京市":
-              posdesc = "这是我挺想去的城市啦。";
-              break;
             case "苏州市":
               posdesc = "上有天堂，下有苏杭。";
               break;
@@ -226,7 +225,11 @@ function showWelcome() {
           posdesc = "朝观日出逐白浪，夕看云起收霞光。";
           break;
         case "四川省":
-          posdesc = "康康川妹子。";
+          switch (ipLoacation.result.ad_info.city) {
+            case "成都市":
+              posdesc = "还没看过熊猫。";
+              break;
+          }
           break;
         case "贵州省":
           posdesc = "茅台，学生，再塞200。";
@@ -299,35 +302,35 @@ document.addEventListener('pjax:complete', showWelcome);
 //----------------------------------------------------------------
 
 /* 微博热搜 start */
-document.addEventListener('pjax:complete', getWeibo);
-document.addEventListener('DOMContentLoaded', getWeibo);
+// document.addEventListener('pjax:complete', getWeibo);
+// document.addEventListener('DOMContentLoaded', getWeibo);
 
-function getWeibo() {
-  fetch('').then(data => data.json()).then(data => {  // 这里要写上你的API!!!
-    let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'
-    html += '<div class="weibo-list">'
-    let hotness = {
-      '爆': 'weibo-boom',
-      '热': 'weibo-hot',
-      '沸': 'weibo-boil',
-      '新': 'weibo-new',
-      '荐': 'weibo-recommend',
-      '音': 'weibo-jyzy',
-      '影': 'weibo-jyzy',
-      '剧': 'weibo-jyzy',
-      '综': 'weibo-jyzy'
-    }
-    for (let item of data) {
-      html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'
-        + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer" style="color:#a08ed5">' + item.title + '</a></span>'
-        + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'
-    }
-    html += '</div>'
-    document.getElementById('weibo-container').innerHTML = html
-  }).catch(function (error) {
-    console.log(error);
-  });
-}
+// function getWeibo() {
+//   fetch('').then(data => data.json()).then(data => {  // 这里要写上你的API!!!
+//     let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'
+//     html += '<div class="weibo-list">'
+//     let hotness = {
+//       '爆': 'weibo-boom',
+//       '热': 'weibo-hot',
+//       '沸': 'weibo-boil',
+//       '新': 'weibo-new',
+//       '荐': 'weibo-recommend',
+//       '音': 'weibo-jyzy',
+//       '影': 'weibo-jyzy',
+//       '剧': 'weibo-jyzy',
+//       '综': 'weibo-jyzy'
+//     }
+//     for (let item of data) {
+//       html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'
+//         + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer" style="color:#a08ed5">' + item.title + '</a></span>'
+//         + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'
+//     }
+//     html += '</div>'
+//     document.getElementById('weibo-container').innerHTML = html
+//   }).catch(function (error) {
+//     console.log(error);
+//   });
+// }
 
 /* 微博热搜 end */
 
@@ -1113,27 +1116,27 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("07/01/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
-    `Future is now 🍭🍭🍭`,
+    `欢迎来到星落溪桥的小家!`,
     `
-        
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
-                                              
-`,
+    ________  ___________   __        _______    _______   __      ___      ___        __    _____  ___    _______   
+    /"       )("     _   ") /""\      /"      \  /"     "| /""\    |"  |    |"  |      |" \  (\"   \|"  \  /" _   "|  
+   (:   \___/  )__/  \\__/ /    \    |:        |(: ______)/    \   ||  |    ||  |      ||  | |.\\   \    |(: ( \___)  
+    \___  \       \\_ /   /' /\  \   |_____/   ) \/    | /' /\  \  |:  |    |:  |      |:  | |: \.   \\  | \/ \       
+     __/  \\      |.  |  //  __'  \   //      /  // ___)//  __'  \  \  |___  \  |___   |.  | |.  \    \. | //  \ ___  
+    /" \   :)     \:  | /   /  \\  \ |:  __   \ (:  (  /   /  \\  \( \_|:  \( \_|:  \  /\  |\|    \    \ |(:   _(  _| 
+   (_______/       \__|(___/    \___)|__|  \___) \__/ (___/    \___)\_______)\_______)(__\_|_)\___|\____\) \_______)  
+                                                                                                                                                                 
+    `,
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2023 By StarFalling",
   ];
 
   setTimeout(
@@ -1172,7 +1175,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by StarFalling %c 你正在访问StarFallingの小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1277,38 +1280,38 @@ function switchNightMode() {
 
 /* 分享按钮 start */
 // 分享本页
-function share_() {
-  let url = window.location.origin + window.location.pathname
-  try {
-    // 截取标题
-    var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
-    new Vue({
-      data: function () {
-        this.$notify({
-          title: "成功复制分享信息🎉",
-          message: "您现在可以通过粘贴直接跟小伙伴分享了！",
-          position: 'top-left',
-          offset: 50,
-          showClose: true,
-          type: "success",
-          duration: 5000
-        });
-        // return { visible: false }
-      }
-    })
-  } catch (err) {
-    console.error('复制失败！', err);
-  }
-  // new ClipboardJS(".share", { text: function () { return '标题：' + document.title + '\n链接：' + url } });
-  // btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~")
-}
+// function share_() {
+//   let url = window.location.origin + window.location.pathname
+//   try {
+//     // 截取标题
+//     var title = document.title;
+//     var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
+//     navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+//     new Vue({
+//       data: function () {
+//         this.$notify({
+//           title: "成功复制分享信息🎉",
+//           message: "您现在可以通过粘贴直接跟小伙伴分享了！",
+//           position: 'top-left',
+//           offset: 50,
+//           showClose: true,
+//           type: "success",
+//           duration: 5000
+//         });
+//         // return { visible: false }
+//       }
+//     })
+//   } catch (err) {
+//     console.error('复制失败！', err);
+//   }
+//   // new ClipboardJS(".share", { text: function () { return '标题：' + document.title + '\n链接：' + url } });
+//   // btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~")
+// }
 
-// 防抖
-function share() {
-  debounce(share_, 300);
-}
+// // 防抖
+// function share() {
+//   debounce(share_, 300);
+// }
 
 /* 分享按钮 end */
 
@@ -2420,47 +2423,9 @@ m = d.getMonth() + 1;
 dd = d.getDate();
 y = d.getFullYear();
 
-// 公祭日
-if (m == 9 && dd == 18) {
-  document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-if (m == 7 && dd == 7) {
-  document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-if (m == 12 && dd == 13) {
-  document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-if (m == 8 && dd == 14) {
-  document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是世界慰安妇纪念日\n🪔勿忘国耻，振兴中华🪔");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-
-
-// 节假日
 if (m == 10 && dd <= 3) {//国庆节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("祝祖国" + (y - 1949).toString() + "岁生日快乐！");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-if (m == 8 && dd == 15) {//搞来玩的，小日子投降
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("小日子已经投降" + (y - 1945).toString() + "年了😃");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2503,7 +2468,7 @@ if (m == 5 && dd == 20) {//520
 }
 if (m == 7 && dd == 1) {//建党节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐！");
+    Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐！顺便祝自己"+ (y - 2003).toString() + "生日快乐吧！");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2519,19 +2484,12 @@ if (m == 12 && dd == 25) {//圣诞节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 8 && dd == 11) {//站长生日
+if (m == 6 && dd == 8) {//生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
+    Swal.fire("要多久后才能忘记呢？");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 6 && dd == 30) {//小猫咪生日
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-
 //传统节日部分
 
 if ((y == 2023 && m == 4 && dd == 5) || (y == 2024 && m == 4 && dd == 4) || (y == 2025 && m == 4 && dd == 4)) {//清明节
@@ -2789,7 +2747,7 @@ function createtime() {
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  var grt = new Date("01/07/2023 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -2804,8 +2762,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }

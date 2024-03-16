@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Fomalhaut🥝
+title: 星落溪桥
 subtitle: 
-description: 'Future is now 🍭🍭🍭'
-keywords: 'Java,MySQL,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝,Fomalhaut'
-author: Fomalhaut🥝
+description: 'Every star will fall'
+keywords: 'Java,MySQL,算法,代码,博客,Butterfly,Hexo'
+author: 星落溪桥
 language: zh-CN
 timezone: ''
 
@@ -18,7 +18,7 @@ abbrlink:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.fomal.cc/
+url: https://xlxq.fun
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -83,7 +83,7 @@ aplayer:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 12
+  per_page: 8
   order_by: -date
 
 # Category & Tag
@@ -124,7 +124,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repository:  # 这里写上你的Github地址
+    repository:  git@github.com:xingluoxiqiao/xingluoxiqiao.github.io.git
     branch: main
   # - type: baidu_url_submitter
   # - type: git
@@ -264,7 +264,7 @@ plugins:
 
 # 小冰分类磁贴
 magnet:
-  enable: true
+  enable: false
   priority: 2
   enable_page: /
   type: categories
@@ -299,3 +299,6 @@ magnet:
     index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""
+
+  butterfly_article_double_row:
+    enable: true

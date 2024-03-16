@@ -1198,7 +1198,7 @@ button#go-up:hover #percent {
 } */
 
 /* 个人信息卡片背景图 */
-[data-theme="light"] #aside-content > .card-widget.card-info {
+/* [data-theme="light"] #aside-content > .card-widget.card-info {
   background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/springBg.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
@@ -1209,7 +1209,7 @@ button#go-up:hover #percent {
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
-}
+} */
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
   animation: huxi_light 4s ease-in-out infinite;
@@ -1271,7 +1271,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp)
+  background: url(https://pic.imgdb.cn/item/65b39f84871b83018ac077bb.jpg)
     no-repeat center center;
   background-size: cover;
 }
@@ -3011,4 +3011,9 @@ hr:before {
 .github-badge img:hover {
   scale: 1.05;
   transition: all 0.3s ease-in-out;
+}
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
 }
