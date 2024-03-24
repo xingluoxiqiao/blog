@@ -3,9 +3,9 @@ title: RocketMQ入门
 description: 消息队列RocketMQ简单了解
 mathjax: true
 tags:
-  - 消息队列，RocketMQ
+  - 消息队列
 categories:
-  - 中间件
+  - 消息队列
 abbrlink: badb3e06
 date: 2024-01-13 19:18:02
 updated: 2024-01-13 19:18:02

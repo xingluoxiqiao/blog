@@ -14,7 +14,7 @@ menu:
   #   游戏: /life/games/ || icon-youxishoubing || faa-tada
   # 八宝箱 || icon-xiangzi || faa-tada || hide:
   #   画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
-  #   动画: /box/animation/ || icon-nvwumao || faa-tada
+  动画: /animation/ || icon-nvwumao || faa-tada
   #   网址导航: /box/nav/ || icon-zhifengche || faa-tada
   #社交 || icon-shejiaoxinxi || faa-tada || hide:
   # 朋友圈: /social/fcircle/ || icon-pengyouquan || faa-tada
@@ -917,6 +917,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"> # 常规css
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     # 综合美化模块样式引入
@@ -1088,10 +1089,10 @@ wowjs:
 envelope_comment:
   enable: true #控制开关
   custom_pic:
-    cover: https://tuchuang.voooe.cn/images/2023/01/02/violet.webp #信笺头部图片
-    line: https://tuchuang.voooe.cn/images/2023/01/02/line.webp #信笺底部图片
-    beforeimg: https://tuchuang.voooe.cn/images/2023/01/02/before.webp # 信封前半部分
-    afterimg: https://tuchuang.voooe.cn/images/2023/01/02/after.webp # 信封后半部分
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
   message: #信笺正文，多行文本，写法如下
     - 本站有哪些做得好或者不好的地方？
     - 或者你有什么改进的建议？

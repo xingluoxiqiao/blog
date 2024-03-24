@@ -3,7 +3,7 @@ title: Spring Boot自动配置原理
 description: 从源码解析Spring Boot自动配置原理
 mathjax: true
 tags:
-  - java，springboot
+  - 源码解析
 categories:
   - 框架
 abbrlink: '38650253'

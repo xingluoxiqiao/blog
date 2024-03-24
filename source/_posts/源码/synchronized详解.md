@@ -3,7 +3,7 @@ title: synchronized详解
 description: java基础知识
 mathjax: true
 tags:
-  - java,锁
+  - 源码解析
 categories:
   - java
 abbrlink: f0baa025
