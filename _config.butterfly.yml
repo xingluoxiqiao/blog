@@ -113,7 +113,7 @@ favicon:
 
 # Avatar (頭像)
 avatar:
-  img: https://pic.imgdb.cn/item/64ab907a1ddac507cc22ec23.jpg
+  img: https://pic.imgdb.cn/item/660036869f345e8d03423a30.webp
   effect: false
 
 # Disable all banner image
@@ -156,13 +156,23 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://pic.imgdb.cn/item/64ab915f1ddac507cc2608d9.jpg
-    - https://pic.imgdb.cn/item/64ab91601ddac507cc260b4d.jpg
-    - https://pic.imgdb.cn/item/64ab91601ddac507cc260bf2.jpg
-    - https://pic.imgdb.cn/item/64ab91861ddac507cc26853f.jpg
-    - https://pic.imgdb.cn/item/64ab91861ddac507cc2686a6.jpg
-    - https://pic.imgdb.cn/item/64ab91871ddac507cc26886d.jpg
-    - https://pic.imgdb.cn/item/64ab91871ddac507cc268991.jpg
+    - https://pic.imgdb.cn/item/660034fb9f345e8d03354181.webp
+    - https://pic.imgdb.cn/item/660034f89f345e8d03351b2b.webp
+    - https://pic.imgdb.cn/item/660034f89f345e8d0335119a.webp
+    - https://pic.imgdb.cn/item/660034f39f345e8d0334dd8d.webp
+    - https://pic.imgdb.cn/item/660034e19f345e8d03345912.webp
+    - https://pic.imgdb.cn/item/660034df9f345e8d03344deb.webp
+    - https://pic.imgdb.cn/item/660034dc9f345e8d033432ae.webp
+    - https://pic.imgdb.cn/item/660034d99f345e8d03341d01.webp
+    - https://pic.imgdb.cn/item/660034c79f345e8d03338a48.webp
+    - https://pic.imgdb.cn/item/660034c69f345e8d03337ef6.webp
+    - https://pic.imgdb.cn/item/660034c49f345e8d0333740c.webp
+    - https://pic.imgdb.cn/item/660034c39f345e8d03336a99.webp
+    - https://pic.imgdb.cn/item/660034ba9f345e8d033325a1.webp
+    - https://pic.imgdb.cn/item/660034b69f345e8d0333078a.webp
+    - https://pic.imgdb.cn/item/660034af9f345e8d0332cbc5.webp
+    - https://pic.imgdb.cn/item/660034a89f345e8d033299b3.webp
+    - https://pic.imgdb.cn/item/6600349f9f345e8d03324d90.webp
     # ...
 
 # A simple 404 page
@@ -555,13 +565,13 @@ tag_ui: # 留空或 index
 # "#e4f4f6" "#efefef"
 background:
   #【必选】默认背景 
-  default: url(https://pic.imgdb.cn/item/64ab91601ddac507cc2609aa.jpg)
+  default: url(https://pic.imgdb.cn/item/660034e49f345e8d03346e26.webp)
   #【可选】PC端夜间模式背景 
-  darkmode: url(https://pic.imgdb.cn/item/65b37749871b83018a346195.jpg)
+  darkmode: url(https://pic.imgdb.cn/item/660034c59f345e8d03337729.webp)
   #【可选】移动端日间默认背景 
-  mobileday: var(https://pic.imgdb.cn/item/64ab91601ddac507cc2609aa.jpg)
+  mobileday: var(https://pic.imgdb.cn/item/660034e49f345e8d03346e26.webp)
   #【可选】移动端夜间模式背景 
-  mobilenight: var(https://pic.imgdb.cn/item/65b37749871b83018a346195.jpg)
+  mobilenight: var(https://pic.imgdb.cn/item/660034c59f345e8d03337729.webp)
 
 
 # Footer Background

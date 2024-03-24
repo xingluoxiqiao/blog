@@ -7,6 +7,7 @@ tags:
 categories:
   - java
 abbrlink: f0baa025
+cover: https://pic.imgdb.cn/item/660034c79f345e8d03338a48.webp
 date: 2023-11-15 20:18:02
 updated: 2023-11-15 20:18:02
 ---

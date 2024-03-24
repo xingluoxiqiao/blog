@@ -7,6 +7,7 @@ tags:
 categories:
   - 消息队列
 abbrlink: badb3e06
+cover: https://pic.imgdb.cn/item/660034dc9f345e8d033432ae.webp
 date: 2024-01-13 19:18:02
 updated: 2024-01-13 19:18:02
 ---
