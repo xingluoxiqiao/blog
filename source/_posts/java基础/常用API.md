@@ -28,8 +28,10 @@ updated: 2023-08-12 20:18:02
 1.Object是java中的顶级父类，所有的类都直接或间接的继承于Object类
 2.Object类中的方法可以被所有子类访问
 3.Objet类中没有成员变量，因此只有一个空参构造方法
+
 ### 成员方法
 <img src="/post-img/Pasted image 20230719172210.png" alt="图片损坏" style="zoom:100%;" />
+
 **1.toString（）**
 当我们打印一个对象的时候。底层会调用对象的toString方法。把对象变成字符串。然后再打印在控制台上,打印完毕换行处理。
 默认情况下,因为Object类中的toString方法返回的是地址值，所以默认情况下打印一个对象打印的就是地址值，但是地址值对于我们是没什么意义的，如果要看到对象内部的属性值，应该重写Object类中的toString方法
@@ -38,9 +40,9 @@ updated: 2023-08-12 20:18:02
 **3.clone（）**
 方法在底层会帮我们创建一个对象，并把原对象中的数据拷贝过去。
 书写细节:
-1.重写Object中的clone方法
-2.让javabean类实现Cloneable接口
-3.创建原对象并调用clone
+1. 重写Object中的clone方法
+2. 让javabean类实现Cloneable接口
+3. 创建原对象并调用clone
 深克隆和浅克隆：
 浅克隆：不管对象内部的属性是基本数据类型还是引用数据类型，都完全拷贝过来（引用拷贝地址值），是Object中的默认方式
 深克隆：基本数据类型拷贝过来，字符串复用，引用数据类型重新创建新的空间拷贝数据后返回新地址值，需要重写clone方法
@@ -84,6 +86,7 @@ BigDecimal bd = BigDecimal.valueOf(10);
 ```
 ## 成员方法
 <img src="/post-img/Pasted image 20230720164842.png" alt="图片损坏" style="zoom:100%;" />
+
 ## 底层存储方式
 遍历字符串，得到每一个数字和小数点代表的ASKII码，存入一个数组中
 # 正则表达式
@@ -91,6 +94,7 @@ BigDecimal bd = BigDecimal.valueOf(10);
 2.在一段文本中查找满足要求的内容
 <img src="/post-img/Pasted image 20230720165324.png" alt="图片损坏" style="zoom:100%;" />
 <img src="/post-img/Pasted image 20230720165726.png" alt="图片损坏" style="zoom:100%;" />
+
 注意：
 1.如果要求两个范围的交集，要写”&&“，如果只写一个，表示的仅仅是”&“这个符号
 2."\\"是转义字符

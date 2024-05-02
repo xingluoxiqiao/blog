@@ -16,6 +16,7 @@ updated: 2023-08-12 20:18:02
 2. 以下是函数式接口的特征：
 	- 接口中只能有一个抽象方法（可以包含默认方法和静态方法）。
 	- `@FunctionalInterface` 注解用于标识该接口是函数式接口（可选）。
+
 # 函数式接口的实现方式
 1. **使用匿名内部类：** 使用匿名内部类是最传统的方式，它允许直接实现接口的抽象方法。
 ```java
@@ -42,6 +43,7 @@ MyFunctionalInterface myFunction =
 //这里假设 `MyClass` 是一个函数式接口 `MyFunctionalInterface` 的实现类。
  MyFunctionalInterface myFunction = MyClass::new;
 ```
+
 # lambda表达式
 Lambda表达式是Java中引入的一种轻量级的函数式编程特性，它允许你将一个函数（或称为代码块）作为一个参数传递给方法，或者更简洁地实现函数式接口。
 

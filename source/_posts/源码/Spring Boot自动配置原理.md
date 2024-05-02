@@ -5,7 +5,7 @@ mathjax: true
 tags:
   - 源码解析
 categories:
-  - 框架
+  - 源码解析
 abbrlink: '38650253'
 cover: https://pic.imgdb.cn/item/660034d99f345e8d03341d01.webp
 date: 2023-11-12 20:18:02
@@ -73,6 +73,7 @@ protected List<String> getCandidateConfigurations(AnnotationMetadata metadata, A
 }
 ```
 这里的文本信息很关键，告诉我们auto configuration classes（自动配置类）是在两个文件中获取的（springboot3.0之后已经取消了META-INF/spring.factories），找到这两个文件，可以发现其中确实存在许多全类名，随便选一个类名跟进，可以发现有@AutoConfiguration，而这个注解又包含@Configuration，也就是说，它是一个配置类，并且提供了被@Bean修饰的方法来返回bean对象，因此，一旦该类被加载，对应的bean就会自动进入IOC容器，我们后续就可以使用，这就是所谓的自动配置
+
 # 流程梳理
 经过上述跟进源码，我们可以梳理一下整个流程：
 1. Spring Boot实现自动配置的关键注解
@@ -83,6 +84,7 @@ protected List<String> getCandidateConfigurations(AnnotationMetadata metadata, A
 	- getAutoConfigurationEntry--->getCandidateConfigurations
 	- getCandidateConfigurations--->META-INF/spring.factories文件
 3. META-INF/spring.factories文件中存放了所有需要进行自动配置的类
+
 # @ConditionalOnXXX
 一个配置类中通常会包含许多bean，那么这些bean全部都会随着配置类的加载进入IOC容器吗，当然不会，这就是@ConditionalOnXXX系列注解的作用
 它用于配置类或者组件上(@Bean修饰的方法)上，可以根据项目的特定需求和环境来决定是否加载某个组件或配置，从而实现更加灵活和可配置的应用程序开发。
@@ -103,6 +105,7 @@ Spring Boot自动配置原理：
 2. @EnableAutoConfiguration包含@AutoConfigurationPackage和@Import两个关键注解，@AutoConfigurationPackage指明Spring Boot应该自动配置位于指定包及其子包中的Bean，而@Import导入的类AutoConfigurationImportSelector中则通过selectImports方法扫描了META-INF/spring.factories文件，并加载了其中的所有配置类
 3. 配置类加载后，其中的bean根据其条件注解@ConditionalOnXXX决定是否被放入IOC容器中
 4. 可以从IOC容器中获取bean对象，自动配置完成
+
 # 补充
 ## @ComponentScan的参数
 `@ComponentScan`注解可以包含多个参数，用于指定扫描的方式和范围。下面是`@ComponentScan`注解常用的参数：
@@ -132,6 +135,7 @@ public class AppConfig {
 1. 在Spring Boot应用程序中，`@ComponentScan`注解通常用于扫描自定义的配置类（例如包含`@Configuration`注解的类），以及其他自定义的组件（例如包含`@Component`, `@Service`, `@Repository`, `@Controller`等注解的类）。这些自定义的配置类和组件通常位于**自己编写的包**中。
 2. 对于**starter中的配置类**，通常是通过`@EnableAutoConfiguration`注解来启用的。starter通常会提供一些自动配置类，这些自动配置类会被Spring Boot的`@EnableAutoConfiguration`注解自动扫描并加载。这些自动配置类中通常包含了一些自动配置的逻辑，用于根据项目的依赖和条件自动配置应用程序的一些功能。
 3. 在Spring Boot应用程序中，自定义的配置类和组件可以使用@ComponentScan注解来扫描并加载，而starter中的配置类通常是通过@EnableAutoConfiguration注解来启用的，然后通过SpringFactoriesLoader加载自动配置类。这样就能够实现自定义配置和自动配置的组合使用，从而灵活地定制和配置应用程序的功能。
+
 ## 自定义starter
 1. SpringBoot Starter 类似于一种插件机制，抛弃了之前繁琐的配置，将复杂依赖统一集成进 Starter。所有依赖模块都遵循着约定成俗的默认配置，并允许我们调整这些配置，即遵循“约定大于配置”的理念 。Starter 的出现极大的帮助开发者们从繁琐的框架配置中解放出来，从而更专注于业务代码。
 2. Spring 官方提供 Starter 通常命名为 spring-boot-starter-{name} 如：spring-boot-starter-web，spring-boot-starter-activemq 等；Spring 官方建议非官方提供的 Starter 命名应遵守 {name}-spring-boot-starter 的格式：如mybatis-spring-boot-starter。
@@ -166,6 +170,7 @@ public class DemoTestSpringBootStarterApplication {
     }
 }
 ```
+
 ## 为什么一定是spring.factories
 `@EnableAutoConfiguration`注解通过读取`META-INF/spring.factories`文件的内容来加载自动配置类。这个过程是由Spring框架的`SpringFactoriesLoader`类实现的。
 具体来说，`SpringFactoriesLoader`类提供了一个静态方法`loadFactoryNames()`，这个方法接收一个ClassLoader和一个要加载的工厂类型作为参数，然后返回一个包含工厂名称的列表。在Spring Boot中，`@EnableAutoConfiguration`注解内部就是通过调用`SpringFactoriesLoader.loadFactoryNames(EnableAutoConfiguration.class, classLoader)`方法来加载自动配置类的。

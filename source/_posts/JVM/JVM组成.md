@@ -3,7 +3,7 @@ title: JVM组成部分
 description: JVM组成
 mathjax: true
 tags:
-  - java，JVM
+  - java
 categories:
   - JVM
 abbrlink: c1464964
