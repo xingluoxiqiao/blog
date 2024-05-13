@@ -1,13 +1,13 @@
 ---
-title: OpenTelemetry入门
+title: OpenTelemetry
 description: 基本概念
 mathjax: true
 tags:
   - 可观测
 categories:
   - 可观测
-abbrlink: bef137fa
-cover: https://pic.imgdb.cn/item/660034fb9f345e8d03354181.webp
+cover: 'https://pic.imgdb.cn/item/660034fb9f345e8d03354181.webp'
+abbrlink: 381cfacc
 date: 2024-03-24 19:18:02
 updated: 2023-03-24 19:18:02
 ---
