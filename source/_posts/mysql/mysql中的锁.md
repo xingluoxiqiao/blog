@@ -6,8 +6,6 @@ tags:
   - mysql
 categories:
   - mysql
-sticky: 2
-swiper_index: 2
 abbrlink: ef86472b
 date: 2023-09-14 18:19:03
 updated: 2023-09-20 22:00:00

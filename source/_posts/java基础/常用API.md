@@ -6,10 +6,7 @@ tags:
   - java
 categories:
   - java
-sticky: 2
-swiper_index: 3
 abbrlink: e3dac448
-cover: https://pic.imgdb.cn/item/660034c69f345e8d03337ef6.webp
 date: 2023-08-12 20:18:02
 updated: 2023-08-12 20:18:02
 ---

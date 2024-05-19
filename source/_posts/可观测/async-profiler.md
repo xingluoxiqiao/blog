@@ -8,7 +8,7 @@ categories:
   - 可观测
 abbrlink: 5afb4600
 date: 2024-03-24 19:18:02
-updated: 2023-03-24 19:18:02
+updated: 2024-03-24 19:18:02
 ---
 # 什么是Async-profiler
 Async-profiler是一个针对Java的低开销采样分析器，它没有受到Safepoint Bias问题（只能在SafePoint处进行采样，可能导致一些代码无法被采样）的影响。该分析器利用了HotSpot特有的一系列API来收集堆栈跟踪信息，并追踪Java堆中的内存分配情况。async-profiler适用于OpenJDK以及其他基于HotSpot JVM的Java运行环境。

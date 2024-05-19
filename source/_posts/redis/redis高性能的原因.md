@@ -6,8 +6,6 @@ tags:
   - redis
 categories:
   - redis
-sticky: 2
-swiper_index: 2
 abbrlink: 561bfca6
 date: 2023-10-19 18:19:03
 updated: 2023-10-19 22:00:00

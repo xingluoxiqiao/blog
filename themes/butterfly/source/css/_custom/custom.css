@@ -1271,7 +1271,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://pic.imgdb.cn/item/660036869f345e8d03423d6d.webp)
+  background: url(https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/loding.webp)
     no-repeat center center;
   background-size: cover;
 }

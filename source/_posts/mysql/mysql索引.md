@@ -1,5 +1,6 @@
 ---
 title: mysql索引
+description: mysql
 mathjax: true
 tags:
   - mysql

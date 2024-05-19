@@ -15,7 +15,7 @@ menu:
   # 八宝箱 || icon-xiangzi || faa-tada || hide:
   #   画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
   动画: /animation/ || icon-nvwumao || faa-tada
-  #   网址导航: /box/nav/ || icon-zhifengche || faa-tada
+  网址导航: /box/nav/ || icon-zhifengche || faa-tada
   #社交 || icon-shejiaoxinxi || faa-tada || hide:
   # 朋友圈: /social/fcircle/ || icon-pengyouquan || faa-tada
   留言板: /comments/ || icon-liuyan || faa-tada
@@ -113,7 +113,7 @@ favicon:
 
 # Avatar (頭像)
 avatar:
-  img: https://pic.imgdb.cn/item/660036869f345e8d03423a30.webp
+  img: https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/Avatar.webp
   effect: false
 
 # Disable all banner image
@@ -156,23 +156,81 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://pic.imgdb.cn/item/660034fb9f345e8d03354181.webp
-    - https://pic.imgdb.cn/item/660034f89f345e8d03351b2b.webp
-    - https://pic.imgdb.cn/item/660034f89f345e8d0335119a.webp
-    - https://pic.imgdb.cn/item/660034f39f345e8d0334dd8d.webp
-    - https://pic.imgdb.cn/item/660034e19f345e8d03345912.webp
-    - https://pic.imgdb.cn/item/660034df9f345e8d03344deb.webp
-    - https://pic.imgdb.cn/item/660034dc9f345e8d033432ae.webp
-    - https://pic.imgdb.cn/item/660034d99f345e8d03341d01.webp
-    - https://pic.imgdb.cn/item/660034c79f345e8d03338a48.webp
-    - https://pic.imgdb.cn/item/660034c69f345e8d03337ef6.webp
-    - https://pic.imgdb.cn/item/660034c49f345e8d0333740c.webp
-    - https://pic.imgdb.cn/item/660034c39f345e8d03336a99.webp
-    - https://pic.imgdb.cn/item/660034ba9f345e8d033325a1.webp
-    - https://pic.imgdb.cn/item/660034b69f345e8d0333078a.webp
-    - https://pic.imgdb.cn/item/660034af9f345e8d0332cbc5.webp
-    - https://pic.imgdb.cn/item/660034a89f345e8d033299b3.webp
-    - https://pic.imgdb.cn/item/6600349f9f345e8d03324d90.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_14.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_15.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_16.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_17.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_18.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_19.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_20.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_21.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_22.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_23.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_24.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_25.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_26.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_27.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_28.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_29.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_30.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_31.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_32.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_33.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_34.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_35.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_36.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_37.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_38.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_39.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_40.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_41.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_42.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_43.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_44.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_45.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_46.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_47.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_48.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_49.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_50.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_51.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_52.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_53.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_54.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_55.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_56.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_57.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_58.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_59.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_60.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_61.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_62.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_63.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_64.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_65.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_66.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_67.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_68.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_69.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_70.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_71.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_72.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_73.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_74.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_75.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_76.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_77.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_78.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_79.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_80.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_81.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_82.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_83.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_84.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_85.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_86.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_87.webp
+    - https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/default_cover_88.webp
     # ...
 
 # A simple 404 page
@@ -235,17 +293,17 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Sponsor/reward
-reward:
-  enable: false
-  coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
-  QR_code:
-    - img: https://tuchuang.voooe.cn/images/2023/01/04/2.webp
-      link:
-      text: 微信
-    - img: https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp
-      link:
-      text: 支付宝
+# # Sponsor/reward
+# reward:
+#   enable: false
+#   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
+#   QR_code:
+#     - img: https://tuchuang.voooe.cn/images/2023/01/04/2.webp
+#       link:
+#       text: 微信
+#     - img: https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp
+#       link:
+#       text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -312,7 +370,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: true
+  lazyload: false
   count: false # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
@@ -565,13 +623,13 @@ tag_ui: # 留空或 index
 # "#e4f4f6" "#efefef"
 background:
   #【必选】默认背景 
-  default: url(https://pic.imgdb.cn/item/660034e49f345e8d03346e26.webp)
+  default: url(https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/light_cover.webp)
   #【可选】PC端夜间模式背景 
-  darkmode: url(https://pic.imgdb.cn/item/660034c59f345e8d03337729.webp)
+  darkmode: url(https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/night_cover.webp)
   #【可选】移动端日间默认背景 
-  mobileday: var(https://pic.imgdb.cn/item/660034e49f345e8d03346e26.webp)
+  mobileday: url(https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/mobile_cover.webp)
   #【可选】移动端夜间模式背景 
-  mobilenight: var(https://pic.imgdb.cn/item/660034c59f345e8d03337729.webp)
+  mobilenight: url(https://xlxq-picbed.oss-cn-beijing.aliyuncs.com/blog/mobile_cover.webp)
 
 
 # Footer Background
