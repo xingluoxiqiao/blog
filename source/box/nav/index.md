@@ -56,7 +56,7 @@ comments: false
 
 <div class="grid-item">
     <a href="https://ChatGPTplus.cn/">
-        <img src="https://picbed.xlxq.fun/img/default_cover_31.webp" alt="Image 5">
+        <img src="https://picbed.xlxq.fun/img/default_cover_126.webp" alt="Image 5">
         <div class="title">RawChat公益站点</div>
         <div class="description">免费可用无需翻墙的chatgpt</div>
     </a>
