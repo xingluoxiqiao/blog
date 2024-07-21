@@ -60,7 +60,8 @@ Bean的生命周期：
 4. 执行bean的后置处理器BeanPostProcessor，主要是对bean进行增强，有可能在这里产生代理对象
 5. 销毁bean，在销毁之前，检查是否实现DisposableBean接口或配置自定义destory-method方法，如果有，先执行这些方法然后销毁bean。
 
-![[Pasted image 20240421200409.png]]
+<img src="/post-img/Pasted image 20240421200409.png" alt="图片损坏" style="zoom:100%;" />
+
 ```
 1.调用构造方法：开始实例化
 2.设置属性：属性赋值
