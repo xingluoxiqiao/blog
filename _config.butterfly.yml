@@ -27,7 +27,7 @@ menu:
   # 个人 || icon-maoliang || faa-tada || hide:
   #   唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
   #   恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
-  电影: /movies/ || icon-dianying1 || faa-tada
+  电影: /life/movies/ || icon-dianying1 || faa-tada
   关于: /personal/ || icon-paperplane || faa-tada
 
 # Code Blocks (代碼相關)

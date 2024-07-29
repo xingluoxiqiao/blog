@@ -32,7 +32,7 @@ hexo.extend.generator.register('links-json', function(locals) {
         });
     });
 
-    const outputDir = path.join(__dirname, '..','source', 'life','movies','static_data'); // 将文件生成在 `static_data` 目录中
+    const outputDir = path.join(__dirname, '..', 'source', 'life', 'movies', 'static_data'); // 将文件生成在 `static_data` 目录中
     const outputFile = path.join(outputDir, 'links.json');
 
     // 确保目标目录存在
