@@ -20,22 +20,42 @@
     ]
   },
   {
+    "folder": "内存管理.md",
+    "links": [
+      {
+        "title": "内存管理",
+        "path": "posts/41e39f2b.html",
+        "permalink": "https://xlxq.fun/posts/41e39f2b.html"
+      }
+    ]
+  },
+  {
+    "folder": "操作系统基本概念.md",
+    "links": [
+      {
+        "title": "操作系统基本概念",
+        "path": "posts/bb34aae4.html",
+        "permalink": "https://xlxq.fun/posts/bb34aae4.html"
+      }
+    ]
+  },
+  {
+    "folder": "死锁.md",
+    "links": [
+      {
+        "title": "死锁",
+        "path": "posts/1abadc07.html",
+        "permalink": "https://xlxq.fun/posts/1abadc07.html"
+      }
+    ]
+  },
+  {
     "folder": "应用层.md",
     "links": [
       {
         "title": "应用层协议详解",
         "path": "posts/48865a1.html",
         "permalink": "https://xlxq.fun/posts/48865a1.html"
-      }
-    ]
-  },
-  {
-    "folder": "网络层.md",
-    "links": [
-      {
-        "title": "网络层协议详解",
-        "path": "posts/f28a47be.html",
-        "permalink": "https://xlxq.fun/posts/f28a47be.html"
       }
     ]
   },
@@ -50,16 +70,6 @@
     ]
   },
   {
-    "folder": "网络编程.md",
-    "links": [
-      {
-        "title": "网络编程基础",
-        "path": "posts/adcb768c.html",
-        "permalink": "https://xlxq.fun/posts/adcb768c.html"
-      }
-    ]
-  },
-  {
     "folder": "访问网页.md",
     "links": [
       {
@@ -70,12 +80,42 @@
     ]
   },
   {
-    "folder": "面试题总结.md",
+    "folder": "网络层.md",
+    "links": [
+      {
+        "title": "网络层协议详解",
+        "path": "posts/f28a47be.html",
+        "permalink": "https://xlxq.fun/posts/f28a47be.html"
+      }
+    ]
+  },
+  {
+    "folder": "计网面试题总结.md",
     "links": [
       {
         "title": "计算机网络面试题总结",
         "path": "posts/5821aef2.html",
         "permalink": "https://xlxq.fun/posts/5821aef2.html"
+      }
+    ]
+  },
+  {
+    "folder": "进程间通信方式.md",
+    "links": [
+      {
+        "title": "进程间通信方式",
+        "path": "posts/239d3904.html",
+        "permalink": "https://xlxq.fun/posts/239d3904.html"
+      }
+    ]
+  },
+  {
+    "folder": "进程与线程.md",
+    "links": [
+      {
+        "title": "进程与线程",
+        "path": "posts/eefe591f.html",
+        "permalink": "https://xlxq.fun/posts/eefe591f.html"
       }
     ]
   }
